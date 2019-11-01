@@ -1,0 +1,7 @@
+post_install() {
+  brscan-skey --reset
+}
+
+pre_remove() {
+  rm -fr /opt/brother/scanner/brscan-skey
+}
